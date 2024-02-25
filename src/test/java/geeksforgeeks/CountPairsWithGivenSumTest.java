@@ -1,12 +1,22 @@
 package geeksforgeeks;
 
+import geeksforgeeks.CountPairsWithGivenSum.BruteForceStrategy;
+import geeksforgeeks.CountPairsWithGivenSum.Strategy;
+import geeksforgeeks.CountPairsWithGivenSum.CountPairsWithGivenSum;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Assumptions;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class CountPairsWithGivenSumTest {
+
+    static Strategy strategy;
+    static CountPairsWithGivenSum strategyExecute;
+
+    @BeforeAll
+    static void getStrategy(){
+        strategy = new BruteForceStrategy();
+        strategyExecute = new CountPairsWithGivenSum(strategy);
+    }
 
     @Test
     void countPairsWithExactSum1() {
@@ -14,8 +24,7 @@ class CountPairsWithGivenSumTest {
         int K = 6;
         int output = 2;
 
-        CountPairsWithGivenSum countPairsWithGivenSum = new CountPairsWithGivenSum();
-        Assertions.assertEquals(output, countPairsWithGivenSum.countPairsWithExactSum(input, K));
+        Assertions.assertEquals(output, strategyExecute.countPairsWithExactSum(input, K));
     }
 
     @Test
@@ -24,7 +33,6 @@ class CountPairsWithGivenSumTest {
         int K = 6;
         int output = 3;
 
-        CountPairsWithGivenSum countPairsWithGivenSum = new CountPairsWithGivenSum();
-        Assertions.assertEquals(output, countPairsWithGivenSum.countPairsWithExactSum(input, K));
+        Assertions.assertEquals(output, strategyExecute.countPairsWithExactSum(input, K));
     }
 }
