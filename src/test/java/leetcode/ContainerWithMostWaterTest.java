@@ -1,9 +1,8 @@
 package leetcode;
 
+import leetcode.ContainerWithMostWater.ContainerWithMostWater;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class ContainerWithMostWaterTest {
 

@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.ContainerWithMostWater;
 
 // https://leetcode.com/problems/container-with-most-water
 public class ContainerWithMostWater {
