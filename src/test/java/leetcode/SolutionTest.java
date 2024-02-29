@@ -7,7 +7,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
-class ContainerWithMostWaterTest {
+public class SolutionTest {
 
 //    static Strategy strategy = new BruteforceStrategy();
     static Strategy strategy = new GreedyStrategy();
@@ -27,7 +27,7 @@ class ContainerWithMostWaterTest {
 
     @ParameterizedTest
     @MethodSource("dataProvider")
-    void maxArea(int[] input, int expectedOutput) {
+    void TestCase(int[] input, int expectedOutput) {
         SolutionExecutor solutionExecutor = new SolutionExecutor(strategy);
         Assertions.assertEquals(expectedOutput, solutionExecutor.execute(input));
     }

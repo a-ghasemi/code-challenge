@@ -1,7 +1,9 @@
 package leetcode.ContainerWithMostWater;
 
+// https://leetcode.com/problems/container-with-most-water
+
 public class SolutionExecutor {
-    Strategy strategy;
+    private final Strategy strategy;
 
     public SolutionExecutor(Strategy strategy){
         this.strategy = strategy;

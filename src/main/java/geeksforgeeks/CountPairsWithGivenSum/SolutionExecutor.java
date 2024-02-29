@@ -2,14 +2,14 @@ package geeksforgeeks.CountPairsWithGivenSum;
 
 // https://www.geeksforgeeks.org/count-pairs-with-given-sum
 
-public class Solution {
+public class SolutionExecutor {
     private final Strategy strategy;
 
-    public Solution(Strategy strategy) {
+    public SolutionExecutor(Strategy strategy) {
         this.strategy = strategy;
     }
 
-    public int run(int[] numbers, int k) {
+    public int execute(int[] numbers, int k) {
         return this.strategy.run(numbers, k);
     }
 }
