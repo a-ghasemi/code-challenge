@@ -1,4 +1,4 @@
-# Challenge Title
+# Template Title
 url: path to the challenge
 
 ## ToDo:
