@@ -1,5 +1,5 @@
 package geeksforgeeks.CountPairsWithGivenSum;
 
 public interface Strategy {
-    int countPairsWithExactSum(int[] numbers, int k);
+    int run(int[] numbers, int k);
 }
