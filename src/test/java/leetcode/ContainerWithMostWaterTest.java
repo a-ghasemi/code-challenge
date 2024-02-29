@@ -9,7 +9,8 @@ import java.util.stream.Stream;
 
 class ContainerWithMostWaterTest {
 
-    static Strategy strategy = new BruteforceStrategy();
+//    static Strategy strategy = new BruteforceStrategy();
+    static Strategy strategy = new GreedyStrategy();
 
     static Stream<Object[]> dataProvider(){
         return Stream.of(
