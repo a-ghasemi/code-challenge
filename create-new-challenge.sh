@@ -45,6 +45,7 @@ fi
 # Update test case package and import statements
 find "$TEST_PLATFORM_PATH" -type f -name "*.java" -exec $SED_CMD "s/package _templatepackage;/package $PLATFORM;/g" {} \;
 find "$TEST_PLATFORM_PATH" -type f -name "*.java" -exec $SED_CMD "s/import _templatepackage.Template.*;/import $PLATFORM.$CHALLENGE_NAME.*;/g" {} \;
+find "$TEST_PLATFORM_PATH" -type f -name "*.java" -exec $SED_CMD "s/public class SolutionTest {/public class $CHALLENGE_NAME"Test" {/g" {} \;
 
 echo "Challenge $CHALLENGE_NAME setup completed in platform $PLATFORM."
 
