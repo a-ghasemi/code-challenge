@@ -21,7 +21,7 @@ mkdir -p "$TEST_PLATFORM_PATH"
 
 # Copy template package to new challenge package
 cp -r "$SRC_PATH/$TEMPLATE_PACKAGE/Template" "$PLATFORM_PATH/$CHALLENGE_NAME"
-cp -r "$TEST_PATH/$TEMPLATE_PACKAGE" "$TEST_PLATFORM_PATH"
+cp -r "$TEST_PATH/$TEMPLATE_PACKAGE/SolutionTest.java" "$TEST_PLATFORM_PATH/SolutionTest.java" # Adjusted for direct copy
 
 # Determine the correct sed command based on the operating system
 SED_CMD="sed -i"
