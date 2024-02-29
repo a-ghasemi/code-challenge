@@ -1,7 +1,5 @@
 package geeksforgeeks.CountPairsWithGivenSum;
 
-// https://www.geeksforgeeks.org/count-pairs-with-given-sum
-
 public class SolutionExecutor {
     private final Strategy strategy;
 
