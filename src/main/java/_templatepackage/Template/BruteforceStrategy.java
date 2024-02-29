@@ -1,4 +1,4 @@
-package templatepackage.Template;
+package _templatepackage.Template;
 
 public class BruteforceStrategy implements Strategy {
     @Override

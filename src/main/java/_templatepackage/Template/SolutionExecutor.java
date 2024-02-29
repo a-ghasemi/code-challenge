@@ -1,4 +1,4 @@
-package templatepackage.Template;
+package _templatepackage.Template;
 
 public class SolutionExecutor {
     private final Strategy strategy;
