@@ -13,10 +13,11 @@ public class SplitStrategy implements Strategy {
     public String run(int m, int n, String s, String t){
         splits = new LinkedList<>(Arrays.asList(s.split("\\*")));
 
-        t = checkAndRemoveFirstPart(t);
-
-        if (t == null) return "NO";
-
+        if (!checkFirstPart(t)) return "NO";
+        if(splits.isEmpty()){
+            return "NO";
+        }
+        t = removeFirstPart(t);
         if (!checkLastPart(t)) return "NO";
 
         return "YES";
@@ -27,17 +28,11 @@ public class SplitStrategy implements Strategy {
         return (t.endsWith(part));
     }
 
-    private static String checkAndRemoveFirstPart(String t) {
-        String part = splits.removeFirst();
-        if (!t.startsWith(part)) {
-            return null;
-        }
-        t = t.substring(part.length());
-
-        if(splits.isEmpty()){
-            return null;
-        }
-        return t;
+    private static boolean checkFirstPart(String t) {
+        return t.startsWith(splits.getFirst());
+    }
+    private static String removeFirstPart(String t) {
+        return t.substring(splits.removeFirst().length());
     }
 }
 
