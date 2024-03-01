@@ -7,7 +7,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 import java.util.stream.Stream;
 
-public class SolutionTest {
+class SolutionTest {
 
     static Strategy strategy = new BruteforceStrategy();
 
