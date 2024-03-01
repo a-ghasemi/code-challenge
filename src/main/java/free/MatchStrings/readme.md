@@ -1,6 +1,6 @@
 # Match Strings
-url: no url
-on telegram group: @theJavaDaily
+## Base
+telegram group: theJavaDaily.t.me
 
 ![img1.png](Images%2Fimg1.png)
 ![img2.png](Images%2Fimg2.png)
