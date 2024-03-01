@@ -1,6 +1,8 @@
 package free;
 
 import free.MatchStrings.*;
+import free.MatchStrings.abstractions.SolutionExecutor;
+import free.MatchStrings.abstractions.Strategy;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;

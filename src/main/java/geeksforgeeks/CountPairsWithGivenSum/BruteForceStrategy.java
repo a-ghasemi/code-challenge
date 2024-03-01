@@ -1,5 +1,7 @@
 package geeksforgeeks.CountPairsWithGivenSum;
 
+import geeksforgeeks.CountPairsWithGivenSum.abstractions.Strategy;
+
 public class BruteForceStrategy implements Strategy {
     @Override
     public int run(int[] numbers, int k) {

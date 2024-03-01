@@ -1,5 +1,7 @@
 package leetcode.ContainerWithMostWater;
 
+import leetcode.ContainerWithMostWater.abstractions.Strategy;
+
 // https://leetcode.com/problems/container-with-most-water
 public class GreedyStrategy implements Strategy {
     @Override

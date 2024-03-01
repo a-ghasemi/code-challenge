@@ -1,6 +1,8 @@
 package _templatepackage;
 
 import _templatepackage.Template.*;
+import _templatepackage.Template.abstractions.SolutionExecutor;
+import _templatepackage.Template.abstractions.Strategy;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;

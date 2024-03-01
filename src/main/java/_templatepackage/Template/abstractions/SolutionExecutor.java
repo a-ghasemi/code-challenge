@@ -1,4 +1,4 @@
-package free.MatchStrings;
+package _templatepackage.Template.abstractions;
 
 public class SolutionExecutor {
     private final Strategy strategy;
@@ -7,7 +7,7 @@ public class SolutionExecutor {
         this.strategy = strategy;
     }
 
-    public String execute(int m, int n, String s, String t){
-        return strategy.run(m, n, s, t);
+    public int execute(int[] input){
+        return strategy.run(input);
     }
 }

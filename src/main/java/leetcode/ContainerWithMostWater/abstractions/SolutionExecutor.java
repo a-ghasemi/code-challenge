@@ -1,4 +1,4 @@
-package leetcode.ContainerWithMostWater;
+package leetcode.ContainerWithMostWater.abstractions;
 
 // https://leetcode.com/problems/container-with-most-water
 

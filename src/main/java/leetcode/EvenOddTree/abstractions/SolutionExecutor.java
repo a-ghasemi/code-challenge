@@ -1,4 +1,4 @@
-package leetcode.EvenOddTree;
+package leetcode.EvenOddTree.abstractions;
 
 public class SolutionExecutor {
     private final Strategy strategy;

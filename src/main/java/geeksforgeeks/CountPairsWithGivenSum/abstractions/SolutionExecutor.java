@@ -1,4 +1,4 @@
-package geeksforgeeks.CountPairsWithGivenSum;
+package geeksforgeeks.CountPairsWithGivenSum.abstractions;
 
 public class SolutionExecutor {
     private final Strategy strategy;

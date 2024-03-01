@@ -1,5 +1,7 @@
 package free.MatchStrings;
 
+import free.MatchStrings.abstractions.Strategy;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 

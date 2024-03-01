@@ -1,5 +1,7 @@
 package _templatepackage.Template;
 
+import _templatepackage.Template.abstractions.Strategy;
+
 public class BruteforceStrategy implements Strategy {
     @Override
     public int run(int[] input){
