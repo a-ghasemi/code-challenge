@@ -9,7 +9,7 @@ import java.util.stream.Stream;
 
 class MatchStringsTest {
 
-    static Strategy strategy = new BruteforceStrategy();
+    static Strategy strategy = new SplitStrategy();
 
     static Stream<Object[]> dataProvider(){
         return Stream.of(
