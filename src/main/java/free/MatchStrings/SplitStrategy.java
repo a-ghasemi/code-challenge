@@ -2,15 +2,16 @@ package free.MatchStrings;
 
 import free.MatchStrings.abstractions.Strategy;
 
-import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.List;
 
 public class SplitStrategy implements Strategy {
-    static ArrayList<String> splits;
+    static List<String> splits;
 
     @Override
     public String run(int m, int n, String s, String t){
-        splits = new ArrayList<>(Arrays.asList(s.split("\\*")));
+        splits = new LinkedList<>(Arrays.asList(s.split("\\*")));
 
         t = checkAndRemoveFirstPart(t);
 
