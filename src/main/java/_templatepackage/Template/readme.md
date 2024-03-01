@@ -9,4 +9,4 @@ url: <path to the challenge>
 * get True Positive on tests
 
 ## Credits
-telegram Java group: theJavaDaily.t.me
+telegram Java group: https://theJavaDaily.t.me
