@@ -7,7 +7,7 @@ public class SolutionExecutor {
         this.strategy = strategy;
     }
 
-    public boolean execute(Integer[] input){
-        return strategy.run(input);
+    public boolean execute(TreeNode root){
+        return strategy.run(root);
     }
 }

@@ -1,8 +1,7 @@
 package leetcode;
 
 import leetcode.EvenOddTree.*;
-import leetcode.EvenOddTree.abstractions.SolutionExecutor;
-import leetcode.EvenOddTree.abstractions.Strategy;
+import leetcode.EvenOddTree.abstractions.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
@@ -28,8 +27,9 @@ class EvenOddTreeTest {
 
     @ParameterizedTest
     @MethodSource("dataProvider")
-    void TestCase(Integer[] input, boolean expectedOutput) {
+        void TestCase(Integer[] input, boolean expectedOutput) {
         SolutionExecutor solutionExecutor = new SolutionExecutor(strategy);
-        Assertions.assertEquals(expectedOutput, solutionExecutor.execute(input));
+        TreeNode root = TreeNode.fillByArray(input);
+        Assertions.assertEquals(expectedOutput, solutionExecutor.execute(root));
     }
 }
